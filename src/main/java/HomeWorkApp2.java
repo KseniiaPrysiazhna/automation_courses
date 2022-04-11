@@ -4,5 +4,10 @@ public class HomeWorkApp2 {
         System.out.println("Task one result: " + taskOneResult);
         TaskTwo.checkNumber(55);
         TaskThree.isNegativeNumber(0);
+        TaskFour.checkNumbersText();
+        TaskFive.oneOrZero();
+        TaskSix.fillArray();
+        TaskSeven.checkNumberDivide();
+        TaskEight.massiveCreation();
     }
    }
