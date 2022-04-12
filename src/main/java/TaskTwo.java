@@ -1,5 +1,5 @@
 public class TaskTwo {
-    public static void checkNumber(int a) {
+    public static void isNumberPositive(int a) {
         if (a >= 0) {
             System.out.println("It is positive");
         } else {

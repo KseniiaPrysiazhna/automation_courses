@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class TaskFive {
-    public static void oneOrZero() {
+    public static void oneToZeroToOne() {
         int[] nums = {0, 1, 0, 0, 1, 1, 0, 1, 1};
         for (int i = 0; i < nums.length; i++) {
             int x = nums[i];
