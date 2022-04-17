@@ -1,46 +1,20 @@
 public class HomeWorkApp {
     public static void main(String[] args) {
-        printThreeWords();
-        checkSumSign();
-        checkColor();
-        compareNumbers();
-    }
-
-    public static void printThreeWords() {
-        String name = "Orange\nBanana\nApple";
-        System.out.println(name);
-    }
-
-    public static void checkSumSign() {
-        int a = 5;
-        int b = 3;
-        int x = a + b;
-        System.out.println(x);
-        if (x >= 0) {
-            System.out.println("Sum is positive");
-        } else {
-            System.out.println("Sum is negative");
+        Employee[] employees = createEmployeeList();
+        for (int i = 0; i < employees.length; i++) {
+            if (employees[i].age >= 40) {
+                employees[i].info();
+            }
         }
     }
 
-    public static void checkColor() {
-        int value = 1;
-        if (value <= 0) {
-            System.out.println("Red");
-        } else if (value > 0 && value <= 100) {
-            System.out.println("Yellow");
-        } else if (value > 100) {
-            System.out.println("Green");
-        }
-    }
-
-    public static void compareNumbers() {
-        int a = 3636636;
-        int b = 188882;
-        if (a >= b) {
-            System.out.println("a>=b");
-        } else {
-            System.out.println("a<b");
-        }
+    public static Employee[] createEmployeeList() {
+        Employee[] empArray = new Employee[5];
+        empArray[0] = new Employee("Josh", "Trevish", "Back-end developer", "Josh@gmail.com", "+128383883", 4500, 41);
+        empArray[1] = new Employee("Mark", "Mack", "QA engineer", "Mack@gmail.com", "+12583883", 2000, 33);
+        empArray[2] = new Employee("Andry", "Lash", "AQA engineer", "Lash@gmail.com", "+128383666", 3000, 40);
+        empArray[3] = new Employee("Margaret", "Gibson", "Project Manager", "Gibson@fmail.com", "+155553883", 2500, 21);
+        empArray[4] = new Employee("Spenser", "Evans", "Business Analyst", "Spenser@gmaol.com", "+124483883", 3000, 55);
+        return empArray;
     }
 }
